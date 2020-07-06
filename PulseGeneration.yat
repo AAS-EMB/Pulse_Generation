@@ -1,0 +1,1421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SettingsName>YAT Terminal Settings</SettingsName>
+  <SettingsVersion>1.7.0</SettingsVersion>
+  <ProductVersion>2.1.0</ProductVersion>
+  <Warning>Modifying structure and/or content may cause undefined behavior!</Warning>
+  <Mark>
+    <TimeStamp>2020-06-15T18:03:50.7610121+07:00</TimeStamp>
+    <UserName>rmsgr</UserName>
+  </Mark>
+  <AutoSaved>false</AutoSaved>
+  <Explicit>
+    <LogIsOn>false</LogIsOn>
+    <UserName />
+    <Terminal>
+      <TerminalType>Text</TerminalType>
+      <IO>
+        <IOType>SerialPort</IOType>
+        <SerialPort>
+          <PortId>
+            <Name>COM21</Name>
+          </PortId>
+          <Communication>
+            <BaudRate>115200</BaudRate>
+            <DataBits>Eight</DataBits>
+            <Parity>None</Parity>
+            <StopBits>One</StopBits>
+            <FlowControl>None</FlowControl>
+            <RtsPin>Disabled</RtsPin>
+            <DtrPin>Disabled</DtrPin>
+          </Communication>
+          <AliveMonitor>
+            <Enabled>true</Enabled>
+            <Interval>500</Interval>
+          </AliveMonitor>
+          <AutoReopen>
+            <Enabled>true</Enabled>
+            <Interval>2000</Interval>
+          </AutoReopen>
+          <OutputBufferSize>
+            <Enabled>false</Enabled>
+            <Size>2048</Size>
+          </OutputBufferSize>
+          <BufferMaxBaudRate>true</BufferMaxBaudRate>
+          <MaxChunkSize>
+            <Enabled>true</Enabled>
+            <Size>48</Size>
+          </MaxChunkSize>
+          <MaxSendRate>
+            <Enabled>false</Enabled>
+            <Size>48</Size>
+            <Interval>10</Interval>
+          </MaxSendRate>
+          <IgnoreFramingErrors>false</IgnoreFramingErrors>
+          <NoSendOnOutputBreak>true</NoSendOnOutputBreak>
+          <NoSendOnInputBreak>false</NoSendOnInputBreak>
+        </SerialPort>
+        <Socket>
+          <Type>Unknown</Type>
+          <RemoteHost>192.168.0.100</RemoteHost>
+          <RemoteTcpPort>4001</RemoteTcpPort>
+          <RemoteUdpPort>10000</RemoteUdpPort>
+          <LocalInterface>
+            <Description>[any]</Description>
+            <Address>0.0.0.0</Address>
+          </LocalInterface>
+          <LocalFilter>[any]</LocalFilter>
+          <LocalTcpPort>4001</LocalTcpPort>
+          <LocalUdpPort>10000</LocalUdpPort>
+          <TcpClientAutoReconnect>
+            <Enabled>true</Enabled>
+            <Interval>500</Interval>
+          </TcpClientAutoReconnect>
+          <UdpServerSendMode>MostRecent</UdpServerSendMode>
+        </Socket>
+        <UsbSerialHidDevice>
+          <DeviceInfo>
+            <VendorId>0</VendorId>
+            <ProductId>0</ProductId>
+            <SerialNumber />
+          </DeviceInfo>
+          <MatchSerial>true</MatchSerial>
+          <Preset>None</Preset>
+          <ReportFormat>
+            <UseId>true</UseId>
+            <Id>0</Id>
+            <PrependPayloadByteLength>false</PrependPayloadByteLength>
+            <AppendTerminatingZero>false</AppendTerminatingZero>
+            <FillLastReport>true</FillLastReport>
+          </ReportFormat>
+          <RxFilterUsage>
+            <SeparateRxId>false</SeparateRxId>
+            <AnyRxId>false</AnyRxId>
+            <RxId>0</RxId>
+          </RxFilterUsage>
+          <FlowControl>None</FlowControl>
+          <AutoOpen>true</AutoOpen>
+          <IncludeNonPayloadData>false</IncludeNonPayloadData>
+        </UsbSerialHidDevice>
+        <Endianness>BigEndian</Endianness>
+        <IndicateSerialPortBreakStates>false</IndicateSerialPortBreakStates>
+        <SerialPortOutputBreakIsModifiable>false</SerialPortOutputBreakIsModifiable>
+      </IO>
+      <Status>
+        <ShowConnectTime>false</ShowConnectTime>
+        <ShowCountAndRate>false</ShowCountAndRate>
+        <ShowFlowControlCount>false</ShowFlowControlCount>
+        <ShowBreakCount>false</ShowBreakCount>
+      </Status>
+      <Buffer>
+        <TxBufferSize>65536</TxBufferSize>
+        <RxBufferSize>65536</RxBufferSize>
+      </Buffer>
+      <Display>
+        <SeparateTxRxRadix>false</SeparateTxRxRadix>
+        <TxRadix>String</TxRadix>
+        <RxRadix>String</RxRadix>
+        <ShowRadix>true</ShowRadix>
+        <ShowLineNumbers>false</ShowLineNumbers>
+        <LineNumberSelection>Total</LineNumberSelection>
+        <ShowTimeStamp>false</ShowTimeStamp>
+        <TimeStampFormat>HH:mm:ss.fff</TimeStampFormat>
+        <TimeStampUseUTC>false</TimeStampUseUTC>
+        <ShowTimeSpan>true</ShowTimeSpan>
+        <TimeSpanFormat>[d \days ][h][h\:][m]m\:ss\.fff</TimeSpanFormat>
+        <ShowTimeDelta>false</ShowTimeDelta>
+        <TimeDeltaFormat>[d \days ][h][h\:][m][m\:][s]s\.fff</TimeDeltaFormat>
+        <ShowPort>false</ShowPort>
+        <ShowDirection>true</ShowDirection>
+        <ShowLength>false</ShowLength>
+        <LengthSelection>CharCount</LengthSelection>
+        <ShowDuration>false</ShowDuration>
+        <TimeDurationFormat>[d \days ][h][h\:][m][m\:][s]s\.fff</TimeDurationFormat>
+        <IncludePortControl>false</IncludePortControl>
+        <PortLineBreakEnabled>true</PortLineBreakEnabled>
+        <DirectionLineBreakEnabled>true</DirectionLineBreakEnabled>
+        <ChunkLineBreakEnabled>false</ChunkLineBreakEnabled>
+        <MaxLineCount>1000</MaxLineCount>
+        <MaxLineLength>1000</MaxLineLength>
+        <ShowCopyOfActiveLine>false</ShowCopyOfActiveLine>
+        <InfoSeparator> </InfoSeparator>
+        <InfoEnclosure>()</InfoEnclosure>
+      </Display>
+      <CharReplace>
+        <ReplaceControlChars>true</ReplaceControlChars>
+        <ControlCharRadix>AsciiMnemonic</ControlCharRadix>
+        <ReplaceBackspace>false</ReplaceBackspace>
+        <ReplaceTab>false</ReplaceTab>
+        <ReplaceSpace>false</ReplaceSpace>
+      </CharReplace>
+      <CharHide>
+        <HideXOnXOff>false</HideXOnXOff>
+        <Hide0x00>false</Hide0x00>
+        <Hide0xFF>false</Hide0xFF>
+      </CharHide>
+      <CharAction>
+        <BeepOnBell>false</BeepOnBell>
+      </CharAction>
+      <Send>
+        <UseExplicitDefaultRadix>false</UseExplicitDefaultRadix>
+        <CopyPredefined>false</CopyPredefined>
+        <Text>
+          <KeepSendText>true</KeepSendText>
+          <SendImmediately>false</SendImmediately>
+          <EnableEscapes>true</EnableEscapes>
+        </Text>
+        <File>
+          <SkipEmptyLines>false</SkipEmptyLines>
+          <EnableEscapes>false</EnableEscapes>
+        </File>
+        <DefaultDelay>100</DefaultDelay>
+        <DefaultLineDelay>100</DefaultLineDelay>
+        <DefaultLineInterval>100</DefaultLineInterval>
+        <DefaultLineRepeat>-1</DefaultLineRepeat>
+        <SignalXOnBeforeEachTransmission>false</SignalXOnBeforeEachTransmission>
+        <SignalXOnPeriodically>
+          <Enabled>false</Enabled>
+          <Interval>1000</Interval>
+        </SignalXOnPeriodically>
+      </Send>
+      <TextTerminal>
+        <SeparateTxRxEol>false</SeparateTxRxEol>
+        <TxEol>&lt;LF&gt;</TxEol>
+        <RxEol>&lt;LF&gt;</RxEol>
+        <Encoding>1251</Encoding>
+        <ShowEol>false</ShowEol>
+        <SeparateTxRxDisplay>false</SeparateTxRxDisplay>
+        <TxDisplay>
+          <LengthLineBreak>
+            <Enabled>false</Enabled>
+            <Length>80</Length>
+          </LengthLineBreak>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </TxDisplay>
+        <RxDisplay>
+          <LengthLineBreak>
+            <Enabled>false</Enabled>
+            <Length>80</Length>
+          </LengthLineBreak>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </RxDisplay>
+        <LineSendDelay>
+          <Enabled>false</Enabled>
+          <Delay>500</Delay>
+          <LineInterval>1</LineInterval>
+        </LineSendDelay>
+        <WaitForResponse>
+          <Enabled>false</Enabled>
+          <Timeout>500</Timeout>
+        </WaitForResponse>
+        <CharSubstitution>None</CharSubstitution>
+        <TextExclusion>
+          <Enabled>false</Enabled>
+          <Patterns>\s*//(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*$</Patterns>
+          <Patterns>/\*(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*\*/</Patterns>
+          <Patterns>^\s*/\*(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*\*/\s*$</Patterns>
+          <Patterns>\s*#(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*$</Patterns>
+          <Patterns>^\s*(REM|::)(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$)\s*.*$</Patterns>
+          <Patterns>\s*&amp;\s*(REM|::)(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$)\s*.*$</Patterns>
+          <Patterns>%=(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*=%</Patterns>
+        </TextExclusion>
+      </TextTerminal>
+      <BinaryTerminal>
+        <SeparateTxRxDisplay>false</SeparateTxRxDisplay>
+        <TxDisplay>
+          <LengthLineBreak>
+            <Enabled>true</Enabled>
+            <Length>16</Length>
+          </LengthLineBreak>
+          <SequenceLineBreakBefore>
+            <Enabled>false</Enabled>
+            <Sequence>ABC</Sequence>
+          </SequenceLineBreakBefore>
+          <SequenceLineBreakAfter>
+            <Enabled>false</Enabled>
+            <Sequence>\h(00)</Sequence>
+          </SequenceLineBreakAfter>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </TxDisplay>
+        <RxDisplay>
+          <LengthLineBreak>
+            <Enabled>true</Enabled>
+            <Length>16</Length>
+          </LengthLineBreak>
+          <SequenceLineBreakBefore>
+            <Enabled>false</Enabled>
+            <Sequence>ABC</Sequence>
+          </SequenceLineBreakBefore>
+          <SequenceLineBreakAfter>
+            <Enabled>false</Enabled>
+            <Sequence>\h(00)</Sequence>
+          </SequenceLineBreakAfter>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </RxDisplay>
+      </BinaryTerminal>
+    </Terminal>
+    <PredefinedCommand>
+      <PageLayout>OneByOne</PageLayout>
+      <Pages>
+        <PageName>Page 1</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Помощь</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>help</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 0 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 1 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 2 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 2</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 3 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 4 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 4</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 5 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 6 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 6</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 7 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 7</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 8 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 8</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 9 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 9</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 10 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 10</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 2</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 11 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 11</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 12 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 12</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 13 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 13</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 14 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 14</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение 15 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 15</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Включение всех каналов</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 0 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 1 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 2 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 2</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 3 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 4 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 4</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 5 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 3</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 6 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 6</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 7 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 7</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 8 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 8</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 9 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 9</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 10 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 10</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 11 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 11</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 12 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 12</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 13 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 13</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 14 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 14</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение 15 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 15</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Отключение всех каналов</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>dis_channel 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Начать тестирование</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>start</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 4</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Остановить тестирование</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>stop</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Перезагрузка устройства</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 0 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 1 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 2 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 2</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 3 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 4 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 4</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 5 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 6 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 6</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 7 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 7</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 8 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 8</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 9 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 9</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 5</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 10 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 10</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 11 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 11</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 12 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 12</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 13 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 13</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 14 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 14</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов 15 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 15</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Кол-во импульсов всех каналов</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 0 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 1 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 2 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 2</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 3 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 4 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 4</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 6</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 5 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 6 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 6</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 7 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 7</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 8 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 8</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 9 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 9</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 10 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 10</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 11 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 11</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 12 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 12</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 13 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 13</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 14 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 14</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов 15 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 15</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Сброс кол-ва импульсов всех каналов</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset_impulse 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 7</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 0 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 1 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 2 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 2</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 3 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 4 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 4</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 5 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 6 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 6</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 7 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 7</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 8 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 8</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 9 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 9</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 10 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 10</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 11 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 11</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 8</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 12 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 12</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 13 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 13</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 14 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 14</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры 15 канала</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 15</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description>Считать параметры всех каналов</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+    </PredefinedCommand>
+    <AutoResponse>
+      <Trigger>[None]</Trigger>
+      <Response>[None]</Response>
+    </AutoResponse>
+    <AutoAction>
+      <Trigger>[None]</Trigger>
+      <Action>[None]</Action>
+    </AutoAction>
+    <Format>
+      <Font>
+        <Name>DejaVu Sans Mono</Name>
+        <Size>8.25</Size>
+        <Style>Regular</Style>
+      </Font>
+      <FormattingEnabled>true</FormattingEnabled>
+      <TxDataFormat>
+        <Color>Blue</Color>
+        <FontStyle>Bold Italic</FontStyle>
+      </TxDataFormat>
+      <TxControlFormat>
+        <Color>Blue</Color>
+        <FontStyle>Italic</FontStyle>
+      </TxControlFormat>
+      <RxDataFormat>
+        <Color>Purple</Color>
+        <FontStyle>Bold Italic</FontStyle>
+      </RxDataFormat>
+      <RxControlFormat>
+        <Color>Purple</Color>
+        <FontStyle>Italic</FontStyle>
+      </RxControlFormat>
+      <TimeStampFormat>
+        <Color>Green</Color>
+        <FontStyle>Italic</FontStyle>
+      </TimeStampFormat>
+      <TimeSpanFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeSpanFormat>
+      <TimeDeltaFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeDeltaFormat>
+      <TimeDurationFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeDurationFormat>
+      <PortFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </PortFormat>
+      <DirectionFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </DirectionFormat>
+      <LengthFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </LengthFormat>
+      <WhiteSpacesFormat>
+        <Color>Black</Color>
+        <FontStyle>Regular</FontStyle>
+      </WhiteSpacesFormat>
+      <IOControlFormat>
+        <Color>Gold</Color>
+        <FontStyle>Bold</FontStyle>
+      </IOControlFormat>
+      <ErrorFormat>
+        <Color>DarkOrange</Color>
+        <FontStyle>Bold</FontStyle>
+      </ErrorFormat>
+      <BackFormat>
+        <Color>White</Color>
+      </BackFormat>
+    </Format>
+    <Log>
+      <RootPath>C:\Users\Anton\Documents\YAT</RootPath>
+      <RootFileName>YAT-Log</RootFileName>
+      <PortLog>false</PortLog>
+      <PortExtension>.log</PortExtension>
+      <RawLogTx>false</RawLogTx>
+      <RawLogBidir>false</RawLogBidir>
+      <RawLogRx>false</RawLogRx>
+      <RawExtension>.dat</RawExtension>
+      <NeatLogTx>false</NeatLogTx>
+      <NeatLogBidir>true</NeatLogBidir>
+      <NeatLogRx>false</NeatLogRx>
+      <NeatExtension>.log</NeatExtension>
+      <NameType>false</NameType>
+      <NameDirection>false</NameDirection>
+      <NameDate>true</NameDate>
+      <NameTime>true</NameTime>
+      <NameSeparator>-</NameSeparator>
+      <FolderType>false</FolderType>
+      <FolderDirection>false</FolderDirection>
+      <WriteMode>Create</WriteMode>
+      <TextEncoding>UTF8</TextEncoding>
+      <EmitEncodingPreamble>true</EmitEncodingPreamble>
+    </Log>
+  </Explicit>
+  <Implicit>
+    <TerminalIsStarted>true</TerminalIsStarted>
+    <SendText>
+      <Command>
+        <IsDefined>true</IsDefined>
+        <Description>55</Description>
+        <DefaultRadix>String</DefaultRadix>
+        <CommandLines>55</CommandLines>
+        <IsFilePath>false</IsFilePath>
+        <FilePath />
+      </Command>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>5</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-09T09:32:04.9204002+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>5000</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>5000</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-09T09:32:01.8429242+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>3</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-09T09:31:59.0274717+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>10000</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>10000</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T17:53:29.1704829+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>1000</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>1000</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T17:50:16.67642+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>500</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>500</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T17:48:46.8364651+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>10</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>10</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T17:17:50.1831903+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>55</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>55</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T16:47:13.3239003+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>1</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T16:47:03.5958285+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>5003</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>5003</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-06-08T16:41:57.4522825+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>start</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>start</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-28T11:09:06.0719654+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>set_impulse 16 500</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>set_impulse 16 500</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-28T11:09:03.5434474+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>help</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>help</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-27T15:40:33.1754888+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>check_param 16</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_param 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-27T15:15:55.0546427+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>en_channel 16</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-27T15:15:48.04473+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>reset</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>reset</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T11:29:56.8024114+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>set_impulse 16 5</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>set_impulse 16 5</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T11:29:46.5542418+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>stop</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>stop</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T11:28:58.8337824+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>check_impulse 16</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 16</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T11:28:06.8664586+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>check_impulse 6</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>check_impulse 6</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T11:28:03.6181934+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>en_channel 3</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 3</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T09:47:40.5320319+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>en_channel 2</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 2</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T09:47:39.6279878+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>en_channel 1</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 1</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T09:47:38.3398022+07:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description>en_channel 0</Description>
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>en_channel 0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2020-05-14T09:47:37.5238212+07:00</TimeStamp>
+      </RecentCommands>
+    </SendText>
+    <SendFile>
+      <Command>
+        <IsDefined>false</IsDefined>
+        <Description />
+        <DefaultRadix>String</DefaultRadix>
+        <CommandLines />
+        <IsFilePath>false</IsFilePath>
+        <FilePath />
+      </Command>
+    </SendFile>
+    <Predefined>
+      <SelectedPageId>7</SelectedPageId>
+    </Predefined>
+    <Window>
+      <State>Maximized</State>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <Size>
+        <Width>900</Width>
+        <Height>675</Height>
+      </Size>
+    </Window>
+    <Layout>
+      <TxMonitorPanelIsVisible>false</TxMonitorPanelIsVisible>
+      <BidirMonitorPanelIsVisible>true</BidirMonitorPanelIsVisible>
+      <RxMonitorPanelIsVisible>false</RxMonitorPanelIsVisible>
+      <MonitorOrientation>Vertical</MonitorOrientation>
+      <TxMonitorSplitterRatio>0.333333343</TxMonitorSplitterRatio>
+      <RxMonitorSplitterRatio>0.5</RxMonitorSplitterRatio>
+      <PredefinedPanelIsVisible>true</PredefinedPanelIsVisible>
+      <PredefinedSplitterRatio>0.7488922</PredefinedSplitterRatio>
+      <SendTextPanelIsVisible>true</SendTextPanelIsVisible>
+      <SendFilePanelIsVisible>true</SendFilePanelIsVisible>
+    </Layout>
+  </Implicit>
+</Settings>
